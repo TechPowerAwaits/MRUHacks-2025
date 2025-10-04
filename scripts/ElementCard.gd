@@ -14,6 +14,10 @@ func setup_card(id: int, sprite: Sprite2D, name_label: Label, description_label:
 	var element_description: String = ElementScript.Descriptions[id]
 	description_label.text = element_description
 	var texture: Texture2D = load("res://Art assets/%s.png" % element_name)
+	
+	if texture == null:
+		texture = load("res://Art assets/%s.png" % element_name.to_lower())
+		# backup for lowercase godot shenanigans 
 	if texture:
 		sprite.texture = texture
 	else:
