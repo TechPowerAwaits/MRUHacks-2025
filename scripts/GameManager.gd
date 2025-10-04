@@ -1,5 +1,5 @@
 # Overall game manager (controls all states), autoload this
-extends Node
+extends RefCounted
 
 
 const Elements = preload("res://scripts/ElementScript.gd").Elements
@@ -8,14 +8,13 @@ const NO_COMBINATION = preload("res://scripts/ElementScript.gd").NO_COMBINATION
 
 var current_element_id: Elements = Elements.Oxygen # Always start as oxygen for now! Change this later on
 var target_element_id: Elements = Elements.Water   # todo make this not hardcoded lmao
-var available_matches: Array = [Elements.Hydrogen, Elements.Lithium, Elements.Carbon] 
 
 signal player_element_changed(new_element_id)
 signal game_won() # or at least, the current goal has been reached
 
 func get_next_match_element_id() -> Elements:
-	var index = randi() % available_matches.size()
-	return available_matches[index]
+	var index = randi() % Elements.size()
+	return Elements
 	
 func process_match_attempt(match_element_id: Elements) -> void:
 	var result_id = ElementCombiner_Script.combine_elements(current_element_id, match_element_id)
