@@ -1,4 +1,4 @@
-Oxygen+Hydrogen=Correct
+Oxygen + Hydrogen = Correct
 Oxygen + Helium = Helium just hangs out, doing its own thing. It’s too lazy to react with oxygen because it’s already got a full electron shell!
 Oxygen + Lithium = Lithium is super excited and reacts with oxygen to form lithium oxide (Li₂O), a stable compound. Lithium’s always ready to bond!
 Oxygen + Beryllium = Beryllium reacts with oxygen to form beryllium oxide (BeO). It’s strong and forms a protective layer to keep the metal from rusting.
