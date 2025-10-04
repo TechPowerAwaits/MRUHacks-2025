@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqisx8nkwx1ie"
-path="res://.godot/imported/Carbon.png-8e4ef5cefa54c5b3f7d875d58e07bdab.ctex"
+path="res://.godot/imported/carbon.png-49d33856053338481f11a4ebb920e435.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Carbon.png"
-dest_files=["res://.godot/imported/Carbon.png-8e4ef5cefa54c5b3f7d875d58e07bdab.ctex"]
+source_file="res://Art assets/carbon.png"
+dest_files=["res://.godot/imported/carbon.png-49d33856053338481f11a4ebb920e435.ctex"]
 
 [params]
 

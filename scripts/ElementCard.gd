@@ -1,14 +1,11 @@
 # ElementCard.gd
-extends Control
+extends Node
 
 const ElementScript = preload("res://scripts/ElementScript.gd")
 
-@onready var sprite: TextureRect = $Sprite
-@onready var name_label: Label = $NameLabel
-
 var element_id: int 
 
-func setup_card(id: int) -> void:
+func setup_card(id: int, sprite: Sprite2D, name_label: Label) -> void:
 	element_id = id
 	
 	var element_name: String = ElementScript.Elements.keys()[id]
