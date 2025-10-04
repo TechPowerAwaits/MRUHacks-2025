@@ -1,8 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://dmm66duys6ooj"]
 
-[ext_resource type="Script" uid="uid://dqhjc6npn5est" path="res://MainMenu.gd" id="1_yqorp"]
+[ext_resource type="Script" uid="uid://dqhjc6npn5est" path="res://scripts/MainMenu.gd" id="1_yqorp"]
 
 [node name="MainMenu" type="Node2D"]
+process_mode = 3
 script = ExtResource("1_yqorp")
 
 [node name="ColorRect" type="ColorRect" parent="."]

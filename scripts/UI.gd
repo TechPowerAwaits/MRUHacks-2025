@@ -1,13 +1,14 @@
 extends Node2D
 
 func _on_setting_button_pressed() -> void:
-	pass # Replace with function body.
-
-
+	get_tree().paused = true
+	$PauseMenu.show()
+	print("Paused")
 
 func _on_resume_pressed() -> void:
-	pass # Replace with function body.
-
+	get_tree().paused = false
+	$PauseMenu.hide()
+	print("Not Paused")
 
 func _on_exit_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")

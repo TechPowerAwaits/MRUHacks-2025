@@ -1,12 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://civn4fxh8gacp"]
+[gd_scene load_steps=5 format=3 uid="uid://civn4fxh8gacp"]
 
 [ext_resource type="Texture2D" uid="uid://cs4doslt3at6p" path="res://Art assets/background (resized).png" id="1_elqb8"]
+[ext_resource type="Script" uid="uid://biq4ks87hf0dh" path="res://scripts/Main.gd" id="1_rarhs"]
 [ext_resource type="PackedScene" uid="uid://cbgppuf468asm" path="res://scenes/UI.tscn" id="2_rvslj"]
+[ext_resource type="PackedScene" uid="uid://fpsvc8igr5eb" path="res://scenes/tinder.tscn" id="3_0bbpv"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_rarhs")
 
 [node name="Background(resized)" type="Sprite2D" parent="."]
 position = Vector2(640, 512)
 texture = ExtResource("1_elqb8")
 
 [node name="UI" parent="." instance=ExtResource("2_rvslj")]
+
+[node name="Tinder" parent="." instance=ExtResource("3_0bbpv")]
+position = Vector2(640, 0)
+
+[connection signal="accept" from="Tinder" to="." method="_on_tinder_accept"]
+[connection signal="reject" from="Tinder" to="." method="_on_tinder_reject"]
