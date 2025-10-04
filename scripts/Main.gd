@@ -9,11 +9,10 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_tinder_accept() -> void:
-	pass # Replace with function body.
+	$AcceptedSFX.play()
 
 func _on_tinder_reject() -> void:
-	pass # Replace with function body.
-
+	$DeniedSFX.play()
 
 func _on_tinder_elm_request() -> void:
 	var elementID = game_manager.get_next_match_element_id()

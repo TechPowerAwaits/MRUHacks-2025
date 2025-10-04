@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceviw22jqthgr"
-path="res://.godot/imported/plant.png-491786f9bc8bb7dd1c3f95b6219a28ad.ctex"
+uid="uid://qjbgv3u84bja"
+path="res://.godot/imported/lithium.png-b00a5c4ae36b6d024b8baa2ab6846d1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/plant.png"
-dest_files=["res://.godot/imported/plant.png-491786f9bc8bb7dd1c3f95b6219a28ad.ctex"]
+source_file="res://Art assets/lithium.png"
+dest_files=["res://.godot/imported/lithium.png-b00a5c4ae36b6d024b8baa2ab6846d1c.ctex"]
 
 [params]
 

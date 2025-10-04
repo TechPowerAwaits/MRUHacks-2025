@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceviw22jqthgr"
-path="res://.godot/imported/plant.png-491786f9bc8bb7dd1c3f95b6219a28ad.ctex"
+uid="uid://b2esadq80wroi"
+path="res://.godot/imported/helium.png-de765370848559283fe1c63d668d82e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/plant.png"
-dest_files=["res://.godot/imported/plant.png-491786f9bc8bb7dd1c3f95b6219a28ad.ctex"]
+source_file="res://Art assets/helium.png"
+dest_files=["res://.godot/imported/helium.png-de765370848559283fe1c63d668d82e5.ctex"]
 
 [params]
 
