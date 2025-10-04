@@ -1,9 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://civn4fxh8gacp"]
+[gd_scene load_steps=3 format=3 uid="uid://civn4fxh8gacp"]
 
 [ext_resource type="Texture2D" uid="uid://cs4doslt3at6p" path="res://Art assets/background (resized).png" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://cbgppuf468asm" path="res://scenes/UI.tscn" id="2_rvslj"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Background(resized)" type="Sprite2D" parent="."]
 position = Vector2(640, 512)
 texture = ExtResource("1_elqb8")
+
+[node name="UI" parent="." instance=ExtResource("2_rvslj")]
