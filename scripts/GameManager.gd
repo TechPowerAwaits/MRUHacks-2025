@@ -1,5 +1,5 @@
 # Overall game manager (controls all states), autoload this
-extends Node
+extends RefCounted
 
 
 const Elements = preload("res://scripts/ElementScript.gd").Elements

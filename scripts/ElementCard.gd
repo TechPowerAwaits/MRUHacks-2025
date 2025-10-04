@@ -1,5 +1,5 @@
 # ElementCard.gd
-extends Node
+extends RefCounted
 
 const ElementScript = preload("res://scripts/ElementScript.gd")
 
