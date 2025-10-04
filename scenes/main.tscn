@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://civn4fxh8gacp"]
+[gd_scene load_steps=2 format=3 uid="uid://civn4fxh8gacp"]
+
+[ext_resource type="Texture2D" uid="uid://cs4doslt3at6p" path="res://Art assets/background (resized).png" id="1_elqb8"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Background(resized)" type="Sprite2D" parent="."]
+position = Vector2(640, 512)
+texture = ExtResource("1_elqb8")
