@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceviw22jqthgr"
-path="res://.godot/imported/Plant.png-90b1e79a92ca36606effbcb93bf0fae7.ctex"
+uid="uid://mrjwv1o1jcxg"
+path="res://.godot/imported/carbonate.png-112c8f9f0ebf3a486fb2eb0210a26767.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Plant.png"
-dest_files=["res://.godot/imported/Plant.png-90b1e79a92ca36606effbcb93bf0fae7.ctex"]
+source_file="res://Art assets/carbonate.png"
+dest_files=["res://.godot/imported/carbonate.png-112c8f9f0ebf3a486fb2eb0210a26767.ctex"]
 
 [params]
 

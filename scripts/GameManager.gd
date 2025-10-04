@@ -13,8 +13,9 @@ signal player_element_changed(new_element_id)
 signal game_won() # or at least, the current goal has been reached
 
 func get_next_match_element_id() -> Elements:
-	var index = randi() % Elements.size()
-	return Elements
+	var all_element_names: Array = Elements.keys()
+	var index = randi() % all_element_names.size()
+	return Elements.get(all_element_names[index])
 	
 func process_match_attempt(match_element_id: Elements) -> void:
 	var result_id = ElementCombiner_Script.combine_elements(current_element_id, match_element_id)
