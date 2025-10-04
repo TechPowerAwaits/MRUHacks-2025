@@ -16,4 +16,4 @@ func _on_tinder_reject() -> void:
 
 func _on_tinder_elm_request() -> void:
 	var elementID = game_manager.get_next_match_element_id()
-	element_card.setup_card(elementID, $Tinder/Element, $Tinder/Title)
+	element_card.setup_card(elementID, $Tinder/Element, $Tinder/Title, $Tinder/Description)
