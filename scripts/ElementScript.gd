@@ -41,6 +41,7 @@ enum Elements {
 	Water,
 	Plant
 }  
+const ELEMENT_ENUM_SIZE: int = Elements.Zinc + 1 
 
 const Descriptions: Dictionary = {
 	Elements.Hydrogen: "I’m lightweight, but when we mix, we’ll explode. Let’s make some fireworks, baby.",

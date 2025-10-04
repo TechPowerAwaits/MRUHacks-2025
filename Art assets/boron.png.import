@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qjbgv3u84bja"
-path="res://.godot/imported/Lithium.png-0b9fc51a3ce6fa3f147d9b1e3a7ba466.ctex"
+uid="uid://7823cewk40dj"
+path="res://.godot/imported/boron.png-73247a0dc5d865f2215476a6b50c5a8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Lithium.png"
-dest_files=["res://.godot/imported/Lithium.png-0b9fc51a3ce6fa3f147d9b1e3a7ba466.ctex"]
+source_file="res://Art assets/boron.png"
+dest_files=["res://.godot/imported/boron.png-73247a0dc5d865f2215476a6b50c5a8a.ctex"]
 
 [params]
 
