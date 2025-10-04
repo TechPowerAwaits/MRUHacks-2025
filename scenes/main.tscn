@@ -18,4 +18,5 @@ texture = ExtResource("1_elqb8")
 position = Vector2(640, 0)
 
 [connection signal="accept" from="Tinder" to="." method="_on_tinder_accept"]
+[connection signal="elm_request" from="Tinder" to="." method="_on_tinder_elm_request"]
 [connection signal="reject" from="Tinder" to="." method="_on_tinder_reject"]
