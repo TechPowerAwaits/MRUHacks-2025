@@ -16,7 +16,7 @@ func setup_card(id: int, sprite: Sprite2D, name_label: Label, description_label:
 	var texture: Texture2D = load("res://Art assets/Characters/%s.png" % element_name)
 	
 	if texture == null:
-		texture = load("res://Art assets/Character/%s.png" % element_name.to_lower())
+		texture = load("res://Art assets/Characters/%s.png" % element_name.to_lower())
 		# backup for lowercase godot shenanigans 
 	if texture:
 		sprite.texture = texture
