@@ -4,9 +4,11 @@ A Godot-based chemical dating simulator, where you match with elements to create
 
 ## Overview
 
-Alchemy Tinder is a game where you must join elements through a tinder interface to form compounds. Think of it as "linking elements" where elements must mix, react, and combine.
+Alchemy Tinder is a game where you must join elements through a Tinder interface to form compounds. Think of it as "linking elements" where elements must mix, react, and combine.
 
 Players start with a single element and must use their logical abilities to create specialized elements, with unique educational blurbs on every combination.
+
+itch.io: [here](https://atron1792.itch.io/alchemy-tinder)
 
 ### Team Members
 
