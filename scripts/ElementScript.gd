@@ -40,7 +40,7 @@ enum Elements {
 	# Combined elements goes here (30+...)
 	Plant,
 	Water,
-	weirdplaceholdersinceimanidiot,
+	Salt,
 	Carbonate,
 	Calcium_Carbonate,
 }  
@@ -137,7 +137,8 @@ const Combination_Results: Dictionary = {
 	"31,27" : "Nickel reacts with water to form nickel hydroxide (Ni(OH)₂). It prefers reacting with water to form compounds, rather than bonding simply.",
 	"31,28" : "Copper doesn't react directly with water, but it can react with oxygen in water to form copper hydroxide (Cu(OH)₂) in the presence of air. It doesn’t just bond with water.",
 	"31,29" : "Zinc reacts with water to form zinc hydroxide (Zn(OH)₂). It prefers reacting with water and forming hydroxides rather than just bonding with it.",
-
+	# Carbonate recipies
+	
 }
 
 # All recipies lol
