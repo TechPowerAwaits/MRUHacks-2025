@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbgppuf468asm"]
+[gd_scene load_steps=4 format=3 uid="uid://cbgppuf468asm"]
 
 [ext_resource type="Script" uid="uid://tni0fs0ue14" path="res://scripts/UI.gd" id="1_ro3t7"]
 [ext_resource type="Texture2D" uid="uid://t1hf6c5rsjeg" path="res://Art assets/PauseMenu.png" id="3_5en4g"]
+[ext_resource type="Texture2D" uid="uid://kwsrwrmeyxwj" path="res://Art assets/Goal1.png" id="3_ua6yw"]
 
 [node name="UI" type="Node2D"]
 process_mode = 3
@@ -9,9 +10,9 @@ z_index = 3
 script = ExtResource("1_ro3t7")
 
 [node name="SettingButton" type="Button" parent="."]
-offset_right = 128.0
-offset_bottom = 128.0
-flat = true
+offset_right = 100.0
+offset_bottom = 100.0
+metadata/_edit_use_anchors_ = true
 
 [node name="PauseMenu" type="Control" parent="."]
 process_mode = 3
@@ -62,11 +63,49 @@ position = Vector2(640, 512)
 texture = ExtResource("3_5en4g")
 
 [node name="GoalButton" type="Button" parent="."]
-offset_right = 128.0
-offset_bottom = 128.0
-flat = true
+offset_left = 104.0
+offset_right = 204.0
+offset_bottom = 100.0
+metadata/_edit_use_anchors_ = true
+
+[node name="GoalMenu" type="PopupPanel" parent="."]
+oversampling_override = 1.0
+position = Vector2i(120, 120)
+size = Vector2i(320, 320)
+
+[node name="ColorRect" type="ColorRect" parent="GoalMenu"]
+z_index = -2
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 316.0
+offset_bottom = 316.0
+color = Color(0, 0, 0, 0.20784314)
+
+[node name="GoalImage" type="Sprite2D" parent="GoalMenu"]
+z_index = -1
+position = Vector2(160, 160)
+scale = Vector2(0.34074068, 0.34074068)
+texture = ExtResource("3_ua6yw")
+
+[node name="GoalExit" type="Button" parent="GoalMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 316.0
+offset_bottom = 316.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "X"
 
 [connection signal="pressed" from="SettingButton" to="." method="_on_setting_button_pressed"]
 [connection signal="pressed" from="PauseMenu/Resume" to="." method="_on_resume_pressed"]
 [connection signal="ready" from="PauseMenu/Resume" to="." method="_on_resume_ready"]
 [connection signal="pressed" from="PauseMenu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="GoalButton" to="." method="_on_goal_button_pressed"]
+[connection signal="pressed" from="GoalMenu/GoalExit" to="." method="_on_goal_exit_pressed"]
