@@ -9,4 +9,4 @@ func _process(_delta: float) -> void:
 
 
 func _on_animation_finished(_anim_name: StringName) -> void:
-	get_tree().change_scene_to_file("res://scenes/comic2.tscn")
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
