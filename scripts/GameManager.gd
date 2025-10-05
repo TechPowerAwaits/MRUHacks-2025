@@ -7,7 +7,6 @@ const NO_COMBINATION = preload("res://scripts/ElementScript.gd").NO_COMBINATION
 const Combination_Results = preload("res://scripts/ElementScript.gd").Combination_Results # <--- ADD THIS LINE
 
 var current_element_id: Elements = Elements.Oxygen # Always start as oxygen for now! Change this later on
-var target_element_id: Elements = Elements.Water   # todo make this not hardcoded lmao
 
 signal player_element_changed(new_element_id)
 # signal game_won() # or at least, the current goal has been reached
@@ -16,6 +15,7 @@ signal combination_rejected(rejection_text)
 
 func get_next_match_element_id() -> Elements:
 	var all_element_names: Array = Elements.keys()
+	
 	var index = randi() % (ElementCombiner_Script.ELEMENT_ENUM_SIZE)
 	return Elements.get(all_element_names[index])
 	
