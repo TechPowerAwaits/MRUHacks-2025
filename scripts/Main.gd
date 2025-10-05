@@ -63,21 +63,18 @@ func _on_player_element_changed(new_element_id: int) -> void:
 			you_text.text = "You! (Carbonate)"
 		Elements.Calcium_Carbonate:
 			poof() 
-			await get_tree().create_timer(0.5).timeout
-			$NextLevelSFX.play() #edit this tyvm
+			await get_tree().create_timer(0.5).timeout #edit this tyvm
 			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
 			you_text.text = "You! (Calcium carbonate)"
+			$VictorySFX.play()
 			time_now = Time.get_ticks_msec()
 			Stats.global_time = round((time_now - time_start)/1000)
 			Stats.global_score = 100 - min(100, Stats.global_time / 10 + Stats.global_mistakes * 5)
-			await get_tree().create_timer(5.0).timeout
 			
-			get_tree().change_scene_to_file("res://scenes/EndScreen.tscn")
-
-
-
-
 	if not new_texture_path.is_empty():
 		var texture = load(new_texture_path)
 		if texture:
 			current_character_sprite.texture = texture
+
+func _on_victory_sfx_finished() -> void:
+	get_tree().change_scene_to_file("res://scenes/EndScreen.tscn")
