@@ -2,8 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:Art assets/Characters/allumnium.png.import
+uid="uid://d06r5uy637iv7"
+path="res://.godot/imported/allumnium.png-6cc7fa8bf00871848594aea55c62faaf.ctex"
+=======
 uid="uid://uhucvamjlxt5"
 path="res://.godot/imported/calcium.png-c81e4cea058eaf0ed3d52af0ed9174c9.ctex"
+>>>>>>> eed2e5e298bb7bb763c679d38d50992f9ff7ec3e:Art assets/Characters/calcium.png.import
 metadata={
 "vram_texture": false
 }
