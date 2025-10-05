@@ -38,8 +38,8 @@ func process_match_attempt(match_element_id: Elements) -> void:
 		var id_b: int = match_element_id
 		
 		var key_parts: Array = [id_a, id_b]
-		print(id_a)
-		print(id_b)
+		#print(id_a)
+		#print(id_b)
 		
 		
 		var combination_key: String = "%d,%d" % [key_parts[0], key_parts[1]]
@@ -52,5 +52,5 @@ func process_match_attempt(match_element_id: Elements) -> void:
 		if Combination_Results.has(combination_key):
 			rejection_text = Combination_Results[combination_key]
 			
-		print(rejection_text)
+		# print(rejection_text)
 		emit_signal("combination_rejected", rejection_text)

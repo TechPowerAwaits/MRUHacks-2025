@@ -191,19 +191,3 @@ static func combine_elements(element_a: Elements, element_b: Elements) -> Elemen
 		return RECIPES[combination_key]
 	else:
 		return NO_COMBINATION
-
-
-# remove this later
-#func _ready():
-	#var result_water = combine_elements(Elements.Hydrogen, Elements.Oxygen)
-	#print("Hydrogen + Oxygen = ", Elements.keys()[result_water])
-
-	#var result_water_reverse = combine_elements(Elements.Oxygen, Elements.Hydrogen)
-	#print("Oxygen + Hydrogen = ", Elements.keys()[result_water_reverse])
-
-	#var result_none = combine_elements(Elements.Helium, Elements.Neon)
-	#if result_none == NO_COMBINATION:
-	#	print("Break")
-	
-
-# Usage: var result_element = ElementScript.combine_elements(element_a, element_b)
