@@ -14,10 +14,18 @@ signal combination_accepted()
 signal combination_rejected(rejection_text) 
 
 func get_next_match_element_id() -> Elements:
-	var all_element_names: Array = Elements.keys()
-	
-	var index = randi() % (ElementCombiner_Script.ELEMENT_ENUM_SIZE)
-	return Elements.get(all_element_names[index])
+	var pool: Array = []
+	for i in range(ElementCombiner_Script.ELEMENT_ENUM_SIZE):
+		pool.append(Elements.values()[i])
+
+	if ElementCombiner_Script.PRIORITY_MATCHES.has(current_element_id):
+		var priority_element_id = ElementCombiner_Script.PRIORITY_MATCHES[current_element_id]
+		
+		for i in range(ElementCombiner_Script.PRIORITY_WEIGHT):
+			pool.append(priority_element_id)
+
+	var index = randi() % pool.size()
+	return pool[index]
 	
 func process_match_attempt(match_element_id: Elements) -> void:
 	var result_id = ElementCombiner_Script.combine_elements(current_element_id, match_element_id)

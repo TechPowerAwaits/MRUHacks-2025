@@ -175,6 +175,13 @@ const RECIPES: Dictionary = {
 	"5,31" : Elements.Carbonate,
 	"19,33" : Elements.Calcium_Carbonate,
 }
+# todo make this just use ^ for less editing
+const PRIORITY_MATCHES: Dictionary = {
+	Elements.Oxygen: Elements.Hydrogen, 
+	Elements.Water: Elements.Carbon,   
+	Elements.Carbonate: Elements.Calcium,
+}
+const PRIORITY_WEIGHT: int = 3
 
 const NO_COMBINATION: int = -1
 static func combine_elements(element_a: Elements, element_b: Elements) -> Elements:

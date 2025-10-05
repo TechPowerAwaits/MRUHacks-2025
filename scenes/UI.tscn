@@ -131,6 +131,7 @@ offset_left = 151.0
 offset_top = 489.0
 offset_right = 387.0
 offset_bottom = 564.0
+flat = true
 
 [node name="Description" type="Label" parent="NotQuiteMenu/TextureRect"]
 layout_mode = 0

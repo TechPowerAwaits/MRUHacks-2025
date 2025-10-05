@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0an5tcbolseo"
-path="res://.godot/imported/phosphorous.png-85bcdf7f272154996970ed63db47ede0.ctex"
+path="res://.godot/imported/phosphorus.png-3090d9ee8385b69b55975f0e40071e8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Characters/phosphorous.png"
-dest_files=["res://.godot/imported/phosphorous.png-85bcdf7f272154996970ed63db47ede0.ctex"]
+source_file="res://Art assets/Characters/phosphorus.png"
+dest_files=["res://.godot/imported/phosphorus.png-3090d9ee8385b69b55975f0e40071e8c.ctex"]
 
 [params]
 

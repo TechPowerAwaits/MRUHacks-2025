@@ -49,6 +49,7 @@ func _on_player_element_changed(new_element_id: int) -> void:
 			$NextLevelSFX.play()
 			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
 			you_text.text = "You! (Calcium carbonate)"
+			get_tree().change_scene_to_file("res://scenes/EndScreen.tscn")
 
 
 
