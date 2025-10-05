@@ -108,8 +108,8 @@ texture = ExtResource("4_ua6yw")
 
 [node name="ColorRect" type="ColorRect" parent="NotQuiteMenu"]
 z_index = -2
-offset_right = 325.0
-offset_bottom = 327.0
+offset_right = 512.0
+offset_bottom = 933.0
 color = Color(0, 0, 0, 0.5764706)
 
 [node name="TextureRect" type="TextureRect" parent="NotQuiteMenu"]
