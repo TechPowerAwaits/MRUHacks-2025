@@ -44,6 +44,7 @@ _data = {
 libraries = {
 &"": SubResource("AnimationLibrary_g8tsm")
 }
+speed_scale = 0.5
 script = ExtResource("1_g8wsx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
