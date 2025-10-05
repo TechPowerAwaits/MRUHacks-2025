@@ -9,11 +9,8 @@ const ElementCombiner_Script = preload("res://scripts/ElementScript.gd")
 @onready var goal_image = $UI/GoalMenu/GoalImage 
 @onready var you_text = $UI/RichTextLabel
 
-<<<<<<< HEAD
 var time_start = 0
 var time_now = 0
-=======
->>>>>>> 982173f1ac99cc338ba14b9f18d2a83fedfc25f2
 
 func _ready():
 	game_manager.combination_rejected.connect(ui._on_combination_rejected)
@@ -65,11 +62,6 @@ func _on_player_element_changed(new_element_id: int) -> void:
 			new_texture_path = "res://Art assets/Characters/carbonate.png"
 			you_text.text = "You! (Carbonate)"
 		Elements.Calcium_Carbonate:
-<<<<<<< HEAD
-			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
-			you_text.text = "You! (Calcium carbonate)"
-			$VictorySFX.play()
-=======
 			poof() 
 			await get_tree().create_timer(0.5).timeout
 			$NextLevelSFX.play() #edit this tyvm
@@ -83,13 +75,9 @@ func _on_player_element_changed(new_element_id: int) -> void:
 			get_tree().change_scene_to_file("res://scenes/EndScreen.tscn")
 
 
->>>>>>> db0fcfd54f8de617ddc50ccc699fb08f1ccd2615
 
 
 	if not new_texture_path.is_empty():
 		var texture = load(new_texture_path)
 		if texture:
 			current_character_sprite.texture = texture
-
-func _on_victory_sfx_finished() -> void:
-		get_tree().change_scene_to_file("res://scenes/EndScreen.tscn")
