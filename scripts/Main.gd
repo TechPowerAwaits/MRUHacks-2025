@@ -9,6 +9,7 @@ var element_card = preload("res://scripts/ElementCard.gd").new()
 func _ready():
 	game_manager.combination_rejected.connect(ui._on_combination_rejected)
 
+
 func _on_tinder_accept() -> void:
 	$AcceptedSFX.play()
 	
