@@ -7,8 +7,6 @@ func _ready() -> void:
 
 
 func _on_animation_finished(_anim_name: StringName) -> void:
-	print("Hi")
-	print(pgNum)
 	match pgNum:
 		1:
 			pgNum += 1
