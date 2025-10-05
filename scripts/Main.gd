@@ -27,25 +27,37 @@ func _on_tinder_elm_request() -> void:
 	var elementID = game_manager.get_next_match_element_id()
 	element_card.setup_card(elementID, $Tinder/Element, $Tinder/Title, $Tinder/Description)
 
+func poof() -> void:
+	var texture_temp = load("res://Art assets/poof effect.png")
+	current_character_sprite.texture = texture_temp 
+			
 func _on_player_element_changed(new_element_id: int) -> void:
 	
 	var new_texture_path: String = ""
 	var Elements = ElementCombiner_Script.Elements
 	
-	match new_element_id:
+	match new_element_id:   
 		Elements.Oxygen:
 			$NextLevelSFX.play()
+			poof() 
+			
 			new_texture_path = "res://Art assets/Characters/Oxygen.png"
 		Elements.Water:
 			$NextLevelSFX.play()
+			poof() 
+			await get_tree().create_timer(0.5).timeout
 			new_texture_path = "res://Art assets/Characters/water character.png"
 			goal_image.texture = load("res://Art assets/Goal2.png")
 			you_text.text = "You! (Water)"
 		Elements.Carbonate:
 			$NextLevelSFX.play()
+			poof() 
+			await get_tree().create_timer(0.5).timeout
 			new_texture_path = "res://Art assets/Characters/carbonate.png"
 			you_text.text = "You! (Carbonate)"
 		Elements.Calcium_Carbonate:
+			poof() 
+			await get_tree().create_timer(0.5).timeout
 			$NextLevelSFX.play() #edit this tyvm
 			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
 			you_text.text = "You! (Calcium carbonate)"
