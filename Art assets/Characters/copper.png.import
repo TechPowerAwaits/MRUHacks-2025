@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beq7506lnjkcy"
-path="res://.godot/imported/Scandium.png-80dedad4ee96d3579cdd558d8bc35a33.ctex"
+uid="uid://dnxrajve57gtt"
+path="res://.godot/imported/copper.png-69ee9ae8c128e7bfbf72c7f03bcd59fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Characters/Scandium.png"
-dest_files=["res://.godot/imported/Scandium.png-80dedad4ee96d3579cdd558d8bc35a33.ctex"]
+source_file="res://Art assets/Characters/copper.png"
+dest_files=["res://.godot/imported/copper.png-69ee9ae8c128e7bfbf72c7f03bcd59fa.ctex"]
 
 [params]
 
