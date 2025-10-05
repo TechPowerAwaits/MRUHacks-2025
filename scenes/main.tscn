@@ -35,7 +35,7 @@ texture = ExtResource("5_tipki")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_o6xl0")
-volume_db = -35.0
+volume_db = -5.0
 autoplay = true
 parameters/looping = false
 
