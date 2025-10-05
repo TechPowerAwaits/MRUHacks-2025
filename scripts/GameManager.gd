@@ -26,9 +26,14 @@ func process_match_attempt(match_element_id: Elements) -> void:
 		current_element_id = result_id
 		
 		emit_signal("player_element_changed", current_element_id)
+		emit_signal("combination_accepted")
 		
-		if current_element_id == target_element_id:
-			emit_signal("game_won")
+		#if current_element_id == target_element_id:
+		#	emit_signal("game_won")
 		
 	else:
-		print("NO MATCH! ", Elements.keys()[current_element_id], " and ", Elements.keys()[match_element_id], " don't mix.")
+		print("NO MATCH! ", Elements.keys()[current_element_id], " and ", Elements.keys()[match_element_id], " don't mix, you idiot.")
+
+
+# 
+#

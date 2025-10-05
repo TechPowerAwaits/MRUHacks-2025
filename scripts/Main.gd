@@ -1,3 +1,4 @@
+
 extends Node2D
 
 var game_manager = preload("res://scripts/GameManager.gd").new()
@@ -10,6 +11,10 @@ func _ready():
 
 func _on_tinder_accept() -> void:
 	$AcceptedSFX.play()
+	# id, call gamemanager lol
+	var match_element_id = element_card.element_id
+	
+	game_manager.process_match_attempt(match_element_id)
 
 func _on_tinder_reject() -> void:
 	$DeniedSFX.play()
