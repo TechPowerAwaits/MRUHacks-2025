@@ -15,6 +15,7 @@ script = ExtResource("1_ro3t7")
 [node name="SettingButton" type="Button" parent="."]
 offset_right = 100.0
 offset_bottom = 100.0
+mouse_default_cursor_shape = 2
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -70,6 +71,7 @@ texture = ExtResource("3_5en4g")
 offset_left = 104.0
 offset_right = 204.0
 offset_bottom = 100.0
+mouse_default_cursor_shape = 2
 flat = true
 metadata/_edit_use_anchors_ = true
 
