@@ -22,3 +22,24 @@ func _on_tinder_reject() -> void:
 func _on_tinder_elm_request() -> void:
 	var elementID = game_manager.get_next_match_element_id()
 	element_card.setup_card(elementID, $Tinder/Element, $Tinder/Title, $Tinder/Description)
+
+func _on_gamemanger_combonation_accept() -> void:
+	if ($CurrentCharacter.texture == "res://Art assets/poof effect.png"):
+		$CurrentCharacter.texture = "res://Art assets/poof effect.png"
+		$CurrentCharacter/Timertimer.set_deferred("wait_time", 0.25)
+		$CurrentCharacter/Timertimer.set_deferred("one_shot", true)
+		$CurrentCharacter.texture = "res://Art assets/Characters/water character.png"
+
+	elif ($CurrentCharacter.texture == "res://Art assets/Characters/water character.png"):
+		$CurrentCharacter.texture = "res://Art assets/poof effect.png"
+		$CurrentCharacter/Timertimer.set_deferred("wait_time", 0.25)
+		$CurrentCharacter/Timertimer.set_deferred("one_shot", true)
+		$CurrentCharacter.texture = "res://Art assets/Characters/carbonate.png"
+	
+	elif ($CurrentCharacter.texture == "res://Art assets/Characters/carbonate.png"):
+		$CurrentCharacter.texture = "res://Art assets/poof effect.png"
+		$CurrentCharacter/Timertimer.set_deferred("wait_time", 0.25)
+		$CurrentCharacter/Timertimer.set_deferred("one_shot", true)
+		$CurrentCharacter.texture = "res://Art assets/Characters/calcium carbonate.png"
+
+	
