@@ -85,30 +85,14 @@ position = Vector2(160, 160)
 scale = Vector2(0.34074068, 0.34074068)
 texture = ExtResource("3_ua6yw")
 
-[node name="GoalExit" type="Button" parent="GoalMenu"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -160.0
-offset_top = -160.0
-offset_right = 160.0
-offset_bottom = 160.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 20
-flat = true
-
 [node name="ColorRect" type="ColorRect" parent="GoalMenu"]
+z_index = -2
 offset_right = 320.0
 offset_bottom = 320.0
-color = Color(0, 0, 0, 0.24313726)
+color = Color(0, 0, 0, 0.5764706)
 
 [connection signal="pressed" from="SettingButton" to="." method="_on_setting_button_pressed"]
 [connection signal="pressed" from="PauseMenu/Resume" to="." method="_on_resume_pressed"]
 [connection signal="ready" from="PauseMenu/Resume" to="." method="_on_resume_ready"]
 [connection signal="pressed" from="PauseMenu/Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="GoalButton" to="." method="_on_goal_button_pressed"]
-[connection signal="pressed" from="GoalMenu/GoalExit" to="." method="_on_goal_exit_pressed"]

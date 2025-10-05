@@ -16,5 +16,3 @@ func _on_exit_pressed() -> void:
 func _on_goal_button_pressed() -> void:
 	$GoalMenu.set_deferred("visible", true)
 	
-func _on_goal_exit_pressed() -> void:
-	$GoalMenu.set_deferred("visible", false)
