@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xw000chr4syp"
-path="res://.godot/imported/SettingIcon.png-2c335626a12a6e7a0675e2d94649dc06.ctex"
+uid="uid://ckfhglhgcxtq4"
+path="res://.godot/imported/aluminum.png-9ea99f293a7659dccac1eab5ba4db97e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/SettingIcon.png"
-dest_files=["res://.godot/imported/SettingIcon.png-2c335626a12a6e7a0675e2d94649dc06.ctex"]
+source_file="res://Art assets/Characters/aluminum.png"
+dest_files=["res://.godot/imported/aluminum.png-9ea99f293a7659dccac1eab5ba4db97e.ctex"]
 
 [params]
 
