@@ -1,17 +1,17 @@
-
 extends Node2D
 
 var game_manager = preload("res://scripts/GameManager.gd").new()
 var element_card = preload("res://scripts/ElementCard.gd").new()
 
 @onready var tinder = $Tinder
+@onready var ui = $UI 
 
 func _ready():
-	pass # Replace with function body.
+	game_manager.combination_rejected.connect(ui._on_combination_rejected)
 
 func _on_tinder_accept() -> void:
 	$AcceptedSFX.play()
-	# id, call gamemanager lol
+	
 	var match_element_id = element_card.element_id
 	
 	game_manager.process_match_attempt(match_element_id)

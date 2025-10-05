@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cbgppuf468asm" path="res://scenes/UI.tscn" id="2_rvslj"]
 [ext_resource type="PackedScene" uid="uid://fpsvc8igr5eb" path="res://scenes/tinder.tscn" id="3_0bbpv"]
 [ext_resource type="AudioStream" uid="uid://cg6ine8vwn44b" path="res://sounds/music/AscPiano.mp3" id="5_o6xl0"]
-[ext_resource type="Texture2D" uid="uid://6gwtmek5okh4" path="res://Art assets/Characters/water character.png" id="5_tipki"]
+[ext_resource type="Texture2D" uid="uid://coraxmu27fv6" path="res://Art assets/Characters/oxygen character.png" id="5_tipki"]
 [ext_resource type="AudioStream" uid="uid://1geu2tmm3660" path="res://sounds/sfx/accepted.mp3" id="6_tipki"]
 [ext_resource type="AudioStream" uid="uid://b3y7mq3bawvro" path="res://sounds/sfx/denied.mp3" id="7_85g3d"]
 

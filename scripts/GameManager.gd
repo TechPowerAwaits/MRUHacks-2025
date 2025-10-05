@@ -1,16 +1,18 @@
-# Overall game manager (controls all states), autoload this
 extends RefCounted
 
 
 const Elements = preload("res://scripts/ElementScript.gd").Elements
 const ElementCombiner_Script = preload("res://scripts/ElementScript.gd") 
 const NO_COMBINATION = preload("res://scripts/ElementScript.gd").NO_COMBINATION
+const Combination_Results = preload("res://scripts/ElementScript.gd").Combination_Results # <--- ADD THIS LINE
 
 var current_element_id: Elements = Elements.Oxygen # Always start as oxygen for now! Change this later on
 var target_element_id: Elements = Elements.Water   # todo make this not hardcoded lmao
 
 signal player_element_changed(new_element_id)
-signal game_won() # or at least, the current goal has been reached
+# signal game_won() # or at least, the current goal has been reached
+signal combination_accepted() 
+signal combination_rejected(rejection_text) 
 
 func get_next_match_element_id() -> Elements:
 	var all_element_names: Array = Elements.keys()
@@ -32,9 +34,17 @@ func process_match_attempt(match_element_id: Elements) -> void:
 		#	emit_signal("game_won")
 		
 	else:
-		# MEOW]
-		print("NO MATCH! ", Elements.keys()[current_element_id], " and ", Elements.keys()[match_element_id], " don't mix, you idiot.")
-
-
-# 
-#
+		var id_a: int = current_element_id
+		var id_b: int = match_element_id
+		
+		var key_parts: Array = [id_a, id_b]
+		key_parts.sort()
+		var combination_key: String = "%d,%d" % [key_parts[0], key_parts[1]]
+		
+		var rejection_text: String = "NO MATCH! " + Elements.keys()[current_element_id] + " and " + Elements.keys()[match_element_id] + " don't mix, you idiot."
+		
+		if Combination_Results.has(combination_key):
+			rejection_text = Combination_Results[combination_key]
+			
+		print(rejection_text)
+		emit_signal("combination_rejected", rejection_text)

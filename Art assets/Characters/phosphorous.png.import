@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b28umxspk1lrm"
-path="res://.godot/imported/magnisum.png-5e76ff5c254cc100e2bc9991212d18f8.ctex"
+uid="uid://d0an5tcbolseo"
+path="res://.godot/imported/phosphorous.png-85bcdf7f272154996970ed63db47ede0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Characters/magnisum.png"
-dest_files=["res://.godot/imported/magnisum.png-5e76ff5c254cc100e2bc9991212d18f8.ctex"]
+source_file="res://Art assets/Characters/phosphorous.png"
+dest_files=["res://.godot/imported/phosphorous.png-85bcdf7f272154996970ed63db47ede0.ctex"]
 
 [params]
 

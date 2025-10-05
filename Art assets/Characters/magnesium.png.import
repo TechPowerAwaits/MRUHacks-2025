@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0an5tcbolseo"
-path="res://.godot/imported/phosporous.png-5e5152a5cd5cd2d033c028063f84abfb.ctex"
+uid="uid://b28umxspk1lrm"
+path="res://.godot/imported/magnesium.png-94c4509f09ac7a7540911b5e1f436b61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Characters/phosporous.png"
-dest_files=["res://.godot/imported/phosporous.png-5e5152a5cd5cd2d033c028063f84abfb.ctex"]
+source_file="res://Art assets/Characters/magnesium.png"
+dest_files=["res://.godot/imported/magnesium.png-94c4509f09ac7a7540911b5e1f436b61.ctex"]
 
 [params]
 

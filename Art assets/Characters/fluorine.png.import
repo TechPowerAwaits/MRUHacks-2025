@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://klxtumhpnobg"
-path="res://.godot/imported/sillicon.png-5850ce4e2bcbd450affc041b9d49948f.ctex"
+uid="uid://drta0y0o23oph"
+path="res://.godot/imported/fluorine.png-1d7494a4b4b533f0721e2109e832892d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Characters/sillicon.png"
-dest_files=["res://.godot/imported/sillicon.png-5850ce4e2bcbd450affc041b9d49948f.ctex"]
+source_file="res://Art assets/Characters/fluorine.png"
+dest_files=["res://.godot/imported/fluorine.png-1d7494a4b4b533f0721e2109e832892d.ctex"]
 
 [params]
 
