@@ -95,7 +95,6 @@ color = Color(0, 0, 0, 0.5764706)
 oversampling_override = 1.0
 position = Vector2i(120, 120)
 size = Vector2i(320, 933)
-visible = true
 theme_override_styles/panel = SubResource("StyleBoxEmpty_5en4g")
 
 [node name="NotQuiteImage" type="Sprite2D" parent="NotQuiteMenu"]
