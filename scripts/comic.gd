@@ -1,6 +1,6 @@
 extends AnimationPlayer
 
-var pgNum: int = 1
+static var pgNum: int = 1
 
 func _ready() -> void:
 	play("Comic")
@@ -8,6 +8,7 @@ func _ready() -> void:
 
 func _on_animation_finished(_anim_name: StringName) -> void:
 	print("Hi")
+	print(pgNum)
 	match pgNum:
 		1:
 			pgNum += 1
