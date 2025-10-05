@@ -1,9 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://fpsvc8igr5eb"]
+[gd_scene load_steps=11 format=3 uid="uid://fpsvc8igr5eb"]
 
 [ext_resource type="Texture2D" uid="uid://bfoh7y4t170re" path="res://Art assets/tinder.png" id="1_608o6"]
 [ext_resource type="Script" uid="uid://bm02nlp2rvesx" path="res://scripts/Tinder.gd" id="1_vsjow"]
 [ext_resource type="FontFile" uid="uid://dmv7s462xwqui" path="res://fonts/Varela_Round/VarelaRound-Regular.ttf" id="3_kmbk7"]
 [ext_resource type="Texture2D" uid="uid://ce8er2w4pkcbp" path="res://Art assets/Characters/Argon.png" id="3_vsjow"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vsjow"]
+device = -1
+keycode = 65
+unicode = 97
+
+[sub_resource type="InputEventKey" id="InputEventKey_eju8b"]
+device = -1
+keycode = 4194319
+
+[sub_resource type="Shortcut" id="Shortcut_7w24b"]
+events = [SubResource("InputEventKey_vsjow"), SubResource("InputEventKey_eju8b")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_7w24b"]
+device = -1
+keycode = 68
+unicode = 100
+
+[sub_resource type="InputEventKey" id="InputEventKey_cexbd"]
+device = -1
+keycode = 4194321
+
+[sub_resource type="Shortcut" id="Shortcut_t3lhi"]
+events = [SubResource("InputEventKey_7w24b"), SubResource("InputEventKey_cexbd")]
 
 [node name="Tinder" type="Node2D"]
 script = ExtResource("1_vsjow")
@@ -44,6 +68,7 @@ offset_top = 868.0
 offset_right = 143.0
 offset_bottom = 1023.0
 mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_7w24b")
 
 [node name="Yeah" type="Button" parent="."]
 offset_left = 390.0
@@ -51,6 +76,7 @@ offset_top = 869.0
 offset_right = 547.0
 offset_bottom = 1024.0
 mouse_default_cursor_shape = 2
+shortcut = SubResource("Shortcut_t3lhi")
 
 [connection signal="pressed" from="No" to="." method="_on_no_pressed"]
 [connection signal="pressed" from="Yeah" to="." method="_on_yeah_pressed"]

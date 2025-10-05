@@ -9,6 +9,7 @@ var element_card = preload("res://scripts/ElementCard.gd").new()
 func _ready():
 	pass # Replace with function body.
 
+
 func _on_tinder_accept() -> void:
 	$AcceptedSFX.play()
 	# id, call gamemanager lol
