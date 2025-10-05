@@ -7,6 +7,7 @@ const ElementCombiner_Script = preload("res://scripts/ElementScript.gd")
 @onready var tinder = $Tinder
 @onready var ui = $UI 
 @onready var goal_image = $UI/GoalMenu/GoalImage 
+@onready var you_text = $UI/RichTextLabel
 
 func _ready():
 	game_manager.combination_rejected.connect(ui._on_combination_rejected)
@@ -39,10 +40,13 @@ func _on_player_element_changed(new_element_id: int) -> void:
 		Elements.Water:
 			new_texture_path = "res://Art assets/Characters/water character.png"
 			goal_image.texture = load("res://Art assets/Goal2.png")
+			you_text.text = "You! (Water)"
 		Elements.Carbonate:
 			new_texture_path = "res://Art assets/Characters/carbonate.png"
+			you_text.text = "You! (Carbonate)"
 		Elements.Calcium_Carbonate:
 			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
+			you_text.text = "You! (Calcium carbonate)"
 
 
 

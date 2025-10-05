@@ -18,6 +18,14 @@ texture = ExtResource("1_elqb8")
 
 [node name="UI" parent="." instance=ExtResource("2_rvslj")]
 
+[node name="RichTextLabel" type="RichTextLabel" parent="UI"]
+offset_left = 114.0
+offset_top = 865.0
+offset_right = 513.0
+offset_bottom = 959.0
+theme_override_font_sizes/normal_font_size = 60
+text = "You! (Oxygen)"
+
 [node name="Tinder" parent="." instance=ExtResource("3_0bbpv")]
 position = Vector2(640, 0)
 
