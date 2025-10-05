@@ -25,7 +25,7 @@ tracks/1/path = NodePath("Comic/SpacePrompt:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2),
+"times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -68,6 +68,7 @@ _data = {
 libraries = {
 &"": SubResource("AnimationLibrary_g8tsm")
 }
+speed_scale = 0.5
 script = ExtResource("1_g8tsm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -77,10 +78,10 @@ region_enabled = true
 region_rect = Rect2(0, 0, 1280, 1024)
 
 [node name="SpacePrompt" type="Label" parent="."]
-offset_left = 541.0
-offset_top = 443.0
-offset_right = 822.0
-offset_bottom = 478.0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = 288.0
+offset_bottom = 36.0
 theme_override_font_sizes/font_size = 28
 text = "Press Space to Skip..."
 
