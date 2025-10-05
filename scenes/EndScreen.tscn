@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://c5amj8inybgxw"]
+
+[ext_resource type="Script" uid="uid://cnncnn2lx55uh" path="res://scripts/EndScreen.gd" id="1_olkmo"]
+[ext_resource type="Texture2D" uid="uid://dmfsd6kokknh0" path="res://Art assets/title screen.png" id="2_hxmv1"]
+[ext_resource type="Texture2D" uid="uid://cci7solrkxh42" path="res://Art assets/RestartButton.png" id="3_0gmhx"]
+[ext_resource type="Texture2D" uid="uid://b8finrwisacm2" path="res://Art assets/exit.png" id="4_oipxo"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_l72w3"]
+device = -1
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_826wr"]
+events = [SubResource("InputEventKey_l72w3")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ow34m"]
+device = -1
+keycode = 81
+unicode = 113
+
+[sub_resource type="Shortcut" id="Shortcut_l72w3"]
+events = [SubResource("InputEventKey_ow34m")]
+
+[node name="EndScreen" type="Node2D"]
+process_mode = 3
+modulate = Color(0.47843137, 0.47843137, 0.47843137, 1)
+script = ExtResource("1_olkmo")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 512)
+texture = ExtResource("2_hxmv1")
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 1024.0
+
+[node name="Restart" type="Button" parent="Buttons"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 128.0
+offset_top = -40.0
+offset_right = 392.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 40
+shortcut = SubResource("Shortcut_826wr")
+shortcut_in_tooltip = false
+icon = ExtResource("3_0gmhx")
+flat = true
+
+[node name="Exit" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 128.71033
+offset_top = 108.5
+offset_right = 392.71033
+offset_bottom = 244.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 40
+shortcut = SubResource("Shortcut_l72w3")
+shortcut_in_tooltip = false
+icon = ExtResource("4_oipxo")
+flat = true
+
+[connection signal="pressed" from="Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]

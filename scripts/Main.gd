@@ -13,8 +13,6 @@ func _ready():
 	game_manager.combination_rejected.connect(ui._on_combination_rejected)
 	game_manager.player_element_changed.connect(_on_player_element_changed)
 	
-
-
 func _on_tinder_accept() -> void:
 	$AcceptedSFX.play()
 	
@@ -36,15 +34,19 @@ func _on_player_element_changed(new_element_id: int) -> void:
 	
 	match new_element_id:
 		Elements.Oxygen:
+			$NextLevelSFX.play()
 			new_texture_path = "res://Art assets/Characters/Oxygen.png"
 		Elements.Water:
+			$NextLevelSFX.play()
 			new_texture_path = "res://Art assets/Characters/water character.png"
 			goal_image.texture = load("res://Art assets/Goal2.png")
 			you_text.text = "You! (Water)"
 		Elements.Carbonate:
+			$NextLevelSFX.play()
 			new_texture_path = "res://Art assets/Characters/carbonate.png"
 			you_text.text = "You! (Carbonate)"
 		Elements.Calcium_Carbonate:
+			$NextLevelSFX.play()
 			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
 			you_text.text = "You! (Calcium carbonate)"
 

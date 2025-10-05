@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://civn4fxh8gacp"]
+[gd_scene load_steps=10 format=3 uid="uid://civn4fxh8gacp"]
 
 [ext_resource type="Texture2D" uid="uid://cs4doslt3at6p" path="res://Art assets/background (resized).png" id="1_elqb8"]
 [ext_resource type="Script" uid="uid://biq4ks87hf0dh" path="res://scripts/Main.gd" id="1_rarhs"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://coraxmu27fv6" path="res://Art assets/Characters/oxygen character.png" id="5_tipki"]
 [ext_resource type="AudioStream" uid="uid://1geu2tmm3660" path="res://sounds/sfx/accepted.mp3" id="6_tipki"]
 [ext_resource type="AudioStream" uid="uid://b3y7mq3bawvro" path="res://sounds/sfx/denied.mp3" id="7_85g3d"]
+[ext_resource type="AudioStream" uid="uid://dw7gr7uh0fje" path="res://sounds/sfx/next-level.mp3" id="9_85g3d"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_rarhs")
@@ -44,6 +45,9 @@ stream = ExtResource("6_tipki")
 
 [node name="DeniedSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_85g3d")
+
+[node name="NextLevelSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_85g3d")
 
 [connection signal="accept" from="Tinder" to="." method="_on_tinder_accept"]
 [connection signal="elm_request" from="Tinder" to="." method="_on_tinder_elm_request"]
