@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cojhs6w4m3jms"]
+[gd_scene load_steps=6 format=3 uid="uid://dlmwecgfdq2my"]
 
-[ext_resource type="Texture2D" uid="uid://ddm6rxl5xs5v" path="res://Art assets/opening cut scene.png" id="1_5v3x5"]
-[ext_resource type="Script" uid="uid://bp02djxecyc8y" path="res://scripts/comic.gd" id="1_g8tsm"]
+[ext_resource type="Script" uid="uid://bp02djxecyc8y" path="res://scripts/comic.gd" id="1_g8wsx"]
+[ext_resource type="Texture2D" uid="uid://cjictlg1wl3qm" path="res://Art assets/page 2.png" id="2_g8wsx"]
 
 [sub_resource type="Animation" id="Animation_5v3x5"]
 resource_name = "Comic"
@@ -9,14 +9,14 @@ length = 4.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Comic/Sprite2D:region_rect")
+tracks/0/path = NodePath("Comic2/Sprite2D:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.7, 0.9, 1.4, 1.6, 2.1, 2.3, 2.8, 3, 3.5, 3.7, 4.2),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Rect2(0, 0, 1280, 1024), Rect2(0, 0, 1280, 1024), Rect2(48, 28, 437, 409), Rect2(48, 28, 437, 409), Rect2(500, 31, 302, 400), Rect2(500, 31, 302, 400), Rect2(819, 24, 437, 411), Rect2(819, 24, 437, 411), Rect2(40, 495, 437, 412), Rect2(40, 495, 437, 412), Rect2(502, 497, 302, 400), Rect2(502, 497, 302, 400), Rect2(819, 488, 440, 410)]
+"values": [Rect2(0, 0, 1280, 1024), Rect2(0, 0, 1280, 1024), Rect2(47, 28, 438, 409), Rect2(47, 28, 438, 409), Rect2(500, 31, 302, 402), Rect2(500, 31, 302, 402), Rect2(819, 24, 437, 414), Rect2(819, 24, 437, 414), Rect2(36, 496, 441, 409), Rect2(36, 496, 441, 409), Rect2(502, 497, 302, 401), Rect2(502, 497, 302, 401), Rect2(821, 489, 437, 411)]
 }
 
 [sub_resource type="Animation" id="Animation_g8tsm"]
@@ -24,7 +24,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Comic/Sprite2D:region_rect")
+tracks/0/path = NodePath("Comic2/Sprite2D:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -40,15 +40,15 @@ _data = {
 &"RESET": SubResource("Animation_g8tsm")
 }
 
-[node name="Comic" type="AnimationPlayer"]
+[node name="Comic2" type="AnimationPlayer"]
 libraries = {
 &"": SubResource("AnimationLibrary_g8tsm")
 }
-script = ExtResource("1_g8tsm")
+script = ExtResource("1_g8wsx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(641, 512)
-texture = ExtResource("1_5v3x5")
+texture = ExtResource("2_g8wsx")
 region_enabled = true
 region_rect = Rect2(0, 0, 1280, 1024)
 
