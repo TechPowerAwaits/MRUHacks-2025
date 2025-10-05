@@ -51,6 +51,7 @@ grow_vertical = 2
 mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 40
 shortcut = SubResource("Shortcut_826wr")
+shortcut_in_tooltip = false
 icon = ExtResource("3_l72w3")
 flat = true
 
@@ -70,6 +71,7 @@ grow_vertical = 2
 mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 40
 shortcut = SubResource("Shortcut_l72w3")
+shortcut_in_tooltip = false
 icon = ExtResource("4_826wr")
 flat = true
 
