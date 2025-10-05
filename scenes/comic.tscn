@@ -5,6 +5,7 @@
 
 [sub_resource type="Animation" id="Animation_5v3x5"]
 resource_name = "Comic"
+length = 4.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -12,10 +13,10 @@ tracks/0/path = NodePath("Comic/Sprite2D:region_rect")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.7, 1.2, 1.7, 2.2, 2.7, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Rect2(0, 0, 1280, 1024), Rect2(48, 28, 437, 409)]
+"values": [Rect2(0, 0, 1280, 1024), Rect2(48, 28, 437, 409), Rect2(500, 31, 302, 400), Rect2(819, 24, 437, 411), Rect2(40, 495, 437, 412), Rect2(502, 497, 302, 400), Rect2(819, 488, 440, 410)]
 }
 
 [sub_resource type="Animation" id="Animation_g8tsm"]
