@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3nien2hrt7is"
-path="res://.godot/imported/Beryllium.png-d09657054f9463bc8312ac24997c5189.ctex"
+path="res://.godot/imported/beryllium.png-becbdc9173ce6721d5bb0abe4d97bd6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Beryllium.png"
-dest_files=["res://.godot/imported/Beryllium.png-d09657054f9463bc8312ac24997c5189.ctex"]
+source_file="res://Art assets/beryllium.png"
+dest_files=["res://.godot/imported/beryllium.png-becbdc9173ce6721d5bb0abe4d97bd6f.ctex"]
 
 [params]
 

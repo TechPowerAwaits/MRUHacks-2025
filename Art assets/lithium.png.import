@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qjbgv3u84bja"
-path="res://.godot/imported/Lithium.png-0b9fc51a3ce6fa3f147d9b1e3a7ba466.ctex"
+path="res://.godot/imported/lithium.png-b00a5c4ae36b6d024b8baa2ab6846d1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Lithium.png"
-dest_files=["res://.godot/imported/Lithium.png-0b9fc51a3ce6fa3f147d9b1e3a7ba466.ctex"]
+source_file="res://Art assets/lithium.png"
+dest_files=["res://.godot/imported/lithium.png-b00a5c4ae36b6d024b8baa2ab6846d1c.ctex"]
 
 [params]
 

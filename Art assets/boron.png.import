@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7823cewk40dj"
-path="res://.godot/imported/Boron.png-457d0efb871915d2412010bc8e06ebbc.ctex"
+path="res://.godot/imported/boron.png-73247a0dc5d865f2215476a6b50c5a8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Boron.png"
-dest_files=["res://.godot/imported/Boron.png-457d0efb871915d2412010bc8e06ebbc.ctex"]
+source_file="res://Art assets/boron.png"
+dest_files=["res://.godot/imported/boron.png-73247a0dc5d865f2215476a6b50c5a8a.ctex"]
 
 [params]
 

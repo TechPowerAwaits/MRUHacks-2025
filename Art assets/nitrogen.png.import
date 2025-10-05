@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d04e6hg6kf3fe"
-path="res://.godot/imported/Nitrogen.png-91b484c9822eb36884f995e8cf5501ca.ctex"
+path="res://.godot/imported/nitrogen.png-eecd7f509368661df3fa9e29ab98132b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Nitrogen.png"
-dest_files=["res://.godot/imported/Nitrogen.png-91b484c9822eb36884f995e8cf5501ca.ctex"]
+source_file="res://Art assets/nitrogen.png"
+dest_files=["res://.godot/imported/nitrogen.png-eecd7f509368661df3fa9e29ab98132b.ctex"]
 
 [params]
 
