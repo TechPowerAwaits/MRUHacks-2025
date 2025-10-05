@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://78852r1eh8pg"
-path="res://.godot/imported/sodium.png-d22908a485afd7f64d5ac9dfc57bbab2.ctex"
+uid="uid://d04e6hg6kf3fe"
+path="res://.godot/imported/nitrogen.png-d18e2c29b37816d1c3e3b0b83812b2b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/sodium.png"
-dest_files=["res://.godot/imported/sodium.png-d22908a485afd7f64d5ac9dfc57bbab2.ctex"]
+source_file="res://Art assets/Characters/nitrogen.png"
+dest_files=["res://.godot/imported/nitrogen.png-d18e2c29b37816d1c3e3b0b83812b2b7.ctex"]
 
 [params]
 

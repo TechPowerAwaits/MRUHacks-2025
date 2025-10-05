@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ben1jr7bh5iy6"
-path="res://.godot/imported/calcium carbonate.png-e1993ed5b40b1f9e6d3ab0253c4c9c84.ctex"
+uid="uid://qjbgv3u84bja"
+path="res://.godot/imported/lithium.png-70f46cbe31f8e036e69645f527294951.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/calcium carbonate.png"
-dest_files=["res://.godot/imported/calcium carbonate.png-e1993ed5b40b1f9e6d3ab0253c4c9c84.ctex"]
+source_file="res://Art assets/Characters/lithium.png"
+dest_files=["res://.godot/imported/lithium.png-70f46cbe31f8e036e69645f527294951.ctex"]
 
 [params]
 

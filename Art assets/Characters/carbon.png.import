@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drta0y0o23oph"
-path="res://.godot/imported/flouride.png-89905168f6319a9e987d8f980837a48a.ctex"
+uid="uid://cqisx8nkwx1ie"
+path="res://.godot/imported/carbon.png-b4d4021c320e8ff8acf2da7885143430.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/flouride.png"
-dest_files=["res://.godot/imported/flouride.png-89905168f6319a9e987d8f980837a48a.ctex"]
+source_file="res://Art assets/Characters/carbon.png"
+dest_files=["res://.godot/imported/carbon.png-b4d4021c320e8ff8acf2da7885143430.ctex"]
 
 [params]
 

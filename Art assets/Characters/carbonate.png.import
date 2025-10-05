@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyfq8mm1btt13"
-path="res://.godot/imported/potassium.png-ee293b9b72e465a433b42345ba9e479e.ctex"
+uid="uid://mrjwv1o1jcxg"
+path="res://.godot/imported/carbonate.png-4fec0cc151efd7f13dc21c3f48f9ec44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/potassium.png"
-dest_files=["res://.godot/imported/potassium.png-ee293b9b72e465a433b42345ba9e479e.ctex"]
+source_file="res://Art assets/Characters/carbonate.png"
+dest_files=["res://.godot/imported/carbonate.png-4fec0cc151efd7f13dc21c3f48f9ec44.ctex"]
 
 [params]
 

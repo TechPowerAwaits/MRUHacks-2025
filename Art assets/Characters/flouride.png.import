@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv2mhb41bgprt"
-path="res://.godot/imported/neon.png-9324eb710e4829e8de00e536e1ac82e5.ctex"
+uid="uid://drta0y0o23oph"
+path="res://.godot/imported/flouride.png-9a313d2f37663ca954bf255e338ffc0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/neon.png"
-dest_files=["res://.godot/imported/neon.png-9324eb710e4829e8de00e536e1ac82e5.ctex"]
+source_file="res://Art assets/Characters/flouride.png"
+dest_files=["res://.godot/imported/flouride.png-9a313d2f37663ca954bf255e338ffc0e.ctex"]
 
 [params]
 

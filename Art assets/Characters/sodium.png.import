@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biwb8060hvw2f"
-path="res://.godot/imported/sodium.png-d22908a485afd7f64d5ac9dfc57bbab2.ctex"
+uid="uid://78852r1eh8pg"
+path="res://.godot/imported/sodium.png-3f89fd63fb3d21d76790a555975eab90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/sodium.png"
-dest_files=["res://.godot/imported/sodium.png-d22908a485afd7f64d5ac9dfc57bbab2.ctex"]
+source_file="res://Art assets/Characters/sodium.png"
+dest_files=["res://.godot/imported/sodium.png-3f89fd63fb3d21d76790a555975eab90.ctex"]
 
 [params]
 

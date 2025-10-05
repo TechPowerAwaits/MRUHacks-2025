@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqisx8nkwx1ie"
-path="res://.godot/imported/carbon.png-49d33856053338481f11a4ebb920e435.ctex"
+uid="uid://3nien2hrt7is"
+path="res://.godot/imported/Beryllium.png-cdcc160b4bc1058cb8cbb8e89793e52e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/carbon.png"
-dest_files=["res://.godot/imported/carbon.png-49d33856053338481f11a4ebb920e435.ctex"]
+source_file="res://Art assets/Characters/Beryllium.png"
+dest_files=["res://.godot/imported/Beryllium.png-cdcc160b4bc1058cb8cbb8e89793e52e.ctex"]
 
 [params]
 

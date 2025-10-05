@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3nien2hrt7is"
-path="res://.godot/imported/Beryllium.png-d09657054f9463bc8312ac24997c5189.ctex"
+uid="uid://7823cewk40dj"
+path="res://.godot/imported/boron.png-d6bbb21e05c84903bb28d9dd238db09a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Beryllium.png"
-dest_files=["res://.godot/imported/Beryllium.png-d09657054f9463bc8312ac24997c5189.ctex"]
+source_file="res://Art assets/Characters/boron.png"
+dest_files=["res://.godot/imported/boron.png-d6bbb21e05c84903bb28d9dd238db09a.ctex"]
 
 [params]
 

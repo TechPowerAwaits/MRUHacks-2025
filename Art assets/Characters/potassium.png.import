@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3nien2hrt7is"
-path="res://.godot/imported/berillyum.png-0a9aa689eaa194b25cfea04c02771db7.ctex"
+uid="uid://cyfq8mm1btt13"
+path="res://.godot/imported/potassium.png-b065f51550e0d358116790a3b15529a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/berillyum.png"
-dest_files=["res://.godot/imported/berillyum.png-0a9aa689eaa194b25cfea04c02771db7.ctex"]
+source_file="res://Art assets/Characters/potassium.png"
+dest_files=["res://.godot/imported/potassium.png-b065f51550e0d358116790a3b15529a3.ctex"]
 
 [params]
 
