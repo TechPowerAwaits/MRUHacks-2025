@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5ywoidvo50k1"
-path="res://.godot/imported/calcium.png-c81e4cea058eaf0ed3d52af0ed9174c9.ctex"
+uid="uid://c3cebhnvewt44"
+path="res://.godot/imported/cobalt.png-d3bb091345c96e19088e405b69873abf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Characters/calcium.png"
-dest_files=["res://.godot/imported/calcium.png-c81e4cea058eaf0ed3d52af0ed9174c9.ctex"]
+source_file="res://Art assets/Characters/cobalt.png"
+dest_files=["res://.godot/imported/cobalt.png-d3bb091345c96e19088e405b69873abf.ctex"]
 
 [params]
 

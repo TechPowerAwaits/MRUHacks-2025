@@ -14,7 +14,7 @@ func _on_exit_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
 
 func _on_goal_button_pressed() -> void:
-	$GoalMenu.visible(true)
+	$GoalMenu.set_deferred("visible", true)
 	
 func _on_goal_exit_pressed() -> void:
-	$GoalMenu.visible(false)
+	$GoalMenu.set_deferred("visible", false)
