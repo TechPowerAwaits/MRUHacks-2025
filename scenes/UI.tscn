@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbgppuf468asm"]
+[gd_scene load_steps=6 format=3 uid="uid://cbgppuf468asm"]
 
 [ext_resource type="Script" uid="uid://tni0fs0ue14" path="res://scripts/UI.gd" id="1_ro3t7"]
 [ext_resource type="Texture2D" uid="uid://t1hf6c5rsjeg" path="res://Art assets/PauseMenu.png" id="3_5en4g"]
 [ext_resource type="Texture2D" uid="uid://kwsrwrmeyxwj" path="res://Art assets/Goal1.png" id="3_ua6yw"]
+[ext_resource type="Texture2D" uid="uid://5aelr4f55tyu" path="res://Art assets/not quite.png" id="4_ua6yw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5en4g"]
 
@@ -76,7 +77,6 @@ metadata/_edit_use_anchors_ = true
 oversampling_override = 1.0
 position = Vector2i(120, 120)
 size = Vector2i(320, 320)
-visible = true
 theme_override_styles/panel = SubResource("StyleBoxEmpty_5en4g")
 
 [node name="GoalImage" type="Sprite2D" parent="GoalMenu"]
@@ -90,6 +90,43 @@ z_index = -2
 offset_right = 320.0
 offset_bottom = 320.0
 color = Color(0, 0, 0, 0.5764706)
+
+[node name="NotQuiteMenu" type="PopupPanel" parent="."]
+oversampling_override = 1.0
+position = Vector2i(120, 120)
+size = Vector2i(320, 933)
+visible = true
+theme_override_styles/panel = SubResource("StyleBoxEmpty_5en4g")
+
+[node name="NotQuiteImage" type="Sprite2D" parent="NotQuiteMenu"]
+z_index = -1
+position = Vector2(90, 175)
+scale = Vector2(0.52, 0.52)
+texture = ExtResource("4_ua6yw")
+
+[node name="ColorRect" type="ColorRect" parent="NotQuiteMenu"]
+z_index = -2
+offset_right = 320.0
+offset_bottom = 933.0
+color = Color(0, 0, 0, 0.5764706)
+
+[node name="TextureRect" type="TextureRect" parent="NotQuiteMenu"]
+offset_right = 320.0
+offset_bottom = 933.0
+
+[node name="Description" type="Label" parent="NotQuiteMenu/TextureRect"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 57.0
+offset_right = 237.0
+offset_bottom = 243.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.019607844, 0.019607844, 0.019607844, 1)
+text = "You are wrooong!!!
+
+How could you?!"
+autowrap_mode = 3
 
 [connection signal="pressed" from="SettingButton" to="." method="_on_setting_button_pressed"]
 [connection signal="pressed" from="PauseMenu/Resume" to="." method="_on_resume_pressed"]
