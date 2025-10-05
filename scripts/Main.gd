@@ -9,11 +9,16 @@ const ElementCombiner_Script = preload("res://scripts/ElementScript.gd")
 @onready var goal_image = $UI/GoalMenu/GoalImage 
 @onready var you_text = $UI/RichTextLabel
 
+var time_start = 0
+var time_now = 0
+
 func _ready():
 	game_manager.combination_rejected.connect(ui._on_combination_rejected)
 	game_manager.player_element_changed.connect(_on_player_element_changed)
+	time_start = Time.get_ticks_msec()
 	
 func _on_tinder_accept() -> void:
+	Stats.global_acceptions += 1
 	$AcceptedSFX.play()
 	
 	var match_element_id = element_card.element_id
@@ -21,6 +26,7 @@ func _on_tinder_accept() -> void:
 	game_manager.process_match_attempt(match_element_id)
 
 func _on_tinder_reject() -> void:
+	Stats.global_rejections += 1
 	$DeniedSFX.play()
 
 func _on_tinder_elm_request() -> void:
@@ -61,6 +67,9 @@ func _on_player_element_changed(new_element_id: int) -> void:
 			$NextLevelSFX.play() #edit this tyvm
 			new_texture_path = "res://Art assets/Characters/calcium carbonate.png"
 			you_text.text = "You! (Calcium carbonate)"
+			time_now = Time.get_ticks_msec()
+			Stats.global_time = round((time_now - time_start)/1000)
+			Stats.global_score = 100 - min(100, Stats.global_time / 10 + Stats.global_mistakes * 5)
 			await get_tree().create_timer(5.0).timeout
 			
 			get_tree().change_scene_to_file("res://scenes/EndScreen.tscn")

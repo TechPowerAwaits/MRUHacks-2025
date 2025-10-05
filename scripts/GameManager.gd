@@ -59,6 +59,7 @@ func process_match_attempt(match_element_id: Elements) -> void:
 		key_parts.sort()
 		if Combination_Results.has(combination_key):
 			rejection_text = Combination_Results[combination_key]
-			
+		
+		Stats.global_mistakes += 1
 		# print(rejection_text)
 		emit_signal("combination_rejected", rejection_text)
