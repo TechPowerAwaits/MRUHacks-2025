@@ -1,6 +1,6 @@
 Oxygen + Carbon + Calcium = Correct
-Oxygen + Carbon + Hydrogen = Hydrogen bonds with carbon to form hydrocarbons (like methane, CH₄), not carbonates. Hydrogen likes to keep it simple with carbon and make gases, not stable solids like carbonates.
-Oxygen + Carbon + Helium = Helium is a noble gas and doesn’t react with oxygen or carbon. It’s perfectly content floating around and doesn’t form compounds like carbonates because it has a full electron shell.
+Carbonate + Hydrogen = Hydrogen bonds with carbon to form hydrocarbons (like methane, CH₄), not carbonates. Hydrogen likes to keep it simple with carbon and make gases, not stable solids like carbonates.
+Carbonate + Helium = Helium is a noble gas and doesn’t react with oxygen or carbon. It’s perfectly content floating around and doesn’t form compounds like carbonates because it has a full electron shell.
 Oxygen + Carbon + Lithium = Lithium reacts with oxygen to form lithium oxide (Li₂O). Lithium likes simple oxides and doesn’t go for the complexity of carbonates. It prefers bonding with oxygen in a simple, straightforward way.
 Oxygen + Carbon + Beryllium = Beryllium forms beryllium oxide (BeO) with oxygen. It’s all about oxides for beryllium, as it doesn’t bond with carbon to form carbonates.
 Oxygen + Carbon + Boron = Boron reacts with oxygen to form boron oxide (B₂O₃). Boron is all about forming oxides and doesn’t need carbon to make carbonates.

@@ -38,13 +38,17 @@ func process_match_attempt(match_element_id: Elements) -> void:
 		var id_b: int = match_element_id
 		
 		var key_parts: Array = [id_a, id_b]
-		if(id_a < 7):
-			key_parts.sort()
+		print(id_a)
+		print(id_b)
+		
 		
 		var combination_key: String = "%d,%d" % [key_parts[0], key_parts[1]]
 		
-		var rejection_text: String = "NO MATCH! " + Elements.keys()[current_element_id] + " and " + Elements.keys()[match_element_id] + " don't mix, you idiot."
+		var rejection_text: String = "No match, " + Elements.keys()[current_element_id] + " and " + Elements.keys()[match_element_id] + " don't mix!"
 		
+		if Combination_Results.has(combination_key):
+			rejection_text = Combination_Results[combination_key]
+		key_parts.sort()
 		if Combination_Results.has(combination_key):
 			rejection_text = Combination_Results[combination_key]
 			

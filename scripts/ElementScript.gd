@@ -38,8 +38,11 @@ enum Elements {
 	Copper,
 	Zinc,
 	# Combined elements goes here (30+...)
+	Plant,
 	Water,
-	Plant
+	weirdplaceholdersinceimanidiot,
+	Carbonate,
+	Calcium_Carbonate,
 }  
 const ELEMENT_ENUM_SIZE: int = Elements.Zinc + 1 
 
@@ -104,11 +107,44 @@ const Combination_Results: Dictionary = {
 	"7,27" : "Nickel reacts with oxygen to form nickel oxide (NiO), a greenish compound used in rechargeable batteries.",
 	"7,28" : "Copper reacts with oxygen over time, creating copper oxide (CuO), which turns green—this is what gives copper its signature patina.",
 	"7,29" : "Zinc reacts with oxygen to form zinc oxide (ZnO), which is used in sunscreen to protect your skin from UV rays.",
+	# Water reactions
+	"31,1" : "Hydrogen is already part of water (H₂O), so it doesn't bond with water to make anything new. It’s already part of the H₂O molecule, just waiting for more water to form!",
+	"31,2" : "Helium is a noble gas, meaning it doesn’t react with anything, including water. It’s just too chill to bond and prefers floating around in the air without reacting.",
+	"31,3" : "Lithium reacts with water to form lithium hydroxide (LiOH) and hydrogen gas (H₂). It’s more interested in forming an alkaline solution, not just bonding to water as a simple compound.",
+	"31,4" : "Beryllium reacts with water to form beryllium hydroxide (Be(OH)₂). It’s more about reacting to create an oxide and a hydroxide, not bonding with water in a simple way.",
+	"31,5" : "Boron doesn't bond with water in a simple way. Boron can form boric acid (H₃BO₃) when in water, but it doesn’t directly mix with water like other elements.",
+	"31,6" : "Carbon doesn’t bond with water directly. However, carbon compounds can interact with water, but elemental carbon itself remains unreactive.",
+	"31,7" : "Nitrogen doesn’t bond with water. It’s a noble gas when it comes to water, meaning it won’t react and just stays in the air.",
+	"31,8" : "Fluorine reacts with water to form hydrofluoric acid (HF) and oxygen. It’s way too reactive to simply mix with water; it breaks it down and forms new compounds instead.",
+	"31,9" : "Neon is another noble gas that doesn’t interact with water. It’s too happy to stay inert, not forming any compounds or reacting with water.",
+	"31,10" : "Sodium reacts with water to form sodium hydroxide (NaOH) and hydrogen gas. It’s highly reactive and forms an alkaline solution with water, not just bonding in a neutral way.",
+	"31,11" : "Magnesium reacts with water to form magnesium hydroxide (Mg(OH)₂) and hydrogen gas. Magnesium forms an alkaline solution rather than simply bonding with water.",
+	"31,12" : "Aluminum reacts with water, especially when heated, forming aluminum hydroxide (Al(OH)₃). It prefers to react and form a different compound rather than simply bonding with water.",
+	"31,13" : "Silicon doesn’t bond with water directly. However, silicon dioxide (SiO₂) can dissolve in water under special conditions, but generally, silicon doesn’t react with water on its own.",
+	"31,14" : "Phosphorus reacts with water to form phosphoric acid (H₃PO₄). Phosphorus prefers reacting to form acids, rather than bonding with water in a neutral way.",
+	"31,15" : "Sulfur reacts with water to form hydrogen sulfide (H₂S) or sulfuric acid (H₂SO₄) under certain conditions. It doesn't simply bond with water; it reacts to form new compounds.",
+	"31,16" : "Chlorine reacts with water to form hydrochloric acid (HCl) and hypochlorous acid (HOCl). Chlorine doesn’t just mix with water; it breaks down and reacts strongly with it.",
+	"31,17" : "Argon is a noble gas, so it doesn’t react with water at all. It’s content to stay inert and doesn’t form compounds with water.",
+	"31,18" : "Potassium reacts violently with water, producing potassium hydroxide (KOH) and hydrogen gas. It’s a very reactive metal and doesn’t just bond with water peacefully.",
+	"31,19" : "Calcium reacts with water to form calcium hydroxide (Ca(OH)₂) and hydrogen gas. Like potassium, calcium prefers reacting with water to form compounds, not just bonding with it.",
+	"31,20" : "Scandium reacts with water to form scandium hydroxide (Sc(OH)₃). It prefers reacting with water and forming a hydroxide rather than just bonding with it.",
+	"31,21" : "Titanium reacts with water to form titanium hydroxide (Ti(OH)₄), not bonding directly with it in a simple way.",
+	"31,22" : "Vanadium reacts with water to form vanadium hydroxide (V(OH)₅). It’s more about forming a hydroxide rather than bonding simply with water.",
+	"31,23" : "Chromium reacts with water to form chromium hydroxide (Cr(OH)₃). Like other metals, it prefers to react and form a hydroxide instead of just bonding with water.",
+	"31,24" : "Manganese reacts with water to form manganese hydroxide (Mn(OH)₂). It doesn't just bond with water; it forms a different compound instead.",
+	"31,25" : "Iron reacts with water, especially when exposed to air, to form iron hydroxide (Fe(OH)₂). It prefers forming hydroxides instead of simple bonding with water.",
+	"31,26" : "Cobalt reacts with water to form cobalt hydroxide (Co(OH)₂). It’s more into forming hydroxides than bonding simply with water.",
+	"31,27" : "Nickel reacts with water to form nickel hydroxide (Ni(OH)₂). It prefers reacting with water to form compounds, rather than bonding simply.",
+	"31,28" : "Copper doesn't react directly with water, but it can react with oxygen in water to form copper hydroxide (Cu(OH)₂) in the presence of air. It doesn’t just bond with water.",
+	"31,29" : "Zinc reacts with water to form zinc hydroxide (Zn(OH)₂). It prefers reacting with water and forming hydroxides rather than just bonding with it.",
+
 }
 
 # All recipies lol
 const RECIPES: Dictionary = {
 	"0,7": Elements.Water, # 31
+	"5,31" : Elements.Carbonate,
+	"19,33" : Elements.Calcium_Carbonate,
 }
 
 const NO_COMBINATION: int = -1
