@@ -69,6 +69,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 40
 shortcut = SubResource("Shortcut_75u2n")
+shortcut_in_tooltip = false
 text = "Exit"
 
 [node name="Sprite2D" type="Sprite2D" parent="PauseMenu"]

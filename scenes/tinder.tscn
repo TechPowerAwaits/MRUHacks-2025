@@ -69,6 +69,7 @@ offset_right = 143.0
 offset_bottom = 1023.0
 mouse_default_cursor_shape = 2
 shortcut = SubResource("Shortcut_7w24b")
+shortcut_in_tooltip = false
 
 [node name="Yeah" type="Button" parent="."]
 offset_left = 390.0
@@ -77,6 +78,7 @@ offset_right = 547.0
 offset_bottom = 1024.0
 mouse_default_cursor_shape = 2
 shortcut = SubResource("Shortcut_t3lhi")
+shortcut_in_tooltip = false
 
 [connection signal="pressed" from="No" to="." method="_on_no_pressed"]
 [connection signal="pressed" from="Yeah" to="." method="_on_yeah_pressed"]
