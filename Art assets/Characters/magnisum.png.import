@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6gwtmek5okh4"
-path="res://.godot/imported/water character.png-64788be78ecc0a1ba8a57e35ba5fc6c5.ctex"
+uid="uid://b28umxspk1lrm"
+path="res://.godot/imported/magnisum.png-5e76ff5c254cc100e2bc9991212d18f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/water character.png"
-dest_files=["res://.godot/imported/water character.png-64788be78ecc0a1ba8a57e35ba5fc6c5.ctex"]
+source_file="res://Art assets/Characters/magnisum.png"
+dest_files=["res://.godot/imported/magnisum.png-5e76ff5c254cc100e2bc9991212d18f8.ctex"]
 
 [params]
 
