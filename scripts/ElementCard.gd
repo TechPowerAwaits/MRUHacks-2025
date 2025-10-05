@@ -20,6 +20,10 @@ func setup_card(id: int, sprite: Sprite2D, name_label: Label, description_label:
 		# backup for lowercase godot shenanigans 
 	if texture:
 		sprite.texture = texture
+	
+		
+		
 	else:
 		print("WARNING: Missing sprite for ", element_name)
+		sprite.texture = load("res://Art assets/EmptyElement.png")
 		

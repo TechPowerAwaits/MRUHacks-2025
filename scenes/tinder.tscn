@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bfoh7y4t170re" path="res://Art assets/tinder.png" id="1_608o6"]
 [ext_resource type="Script" uid="uid://bm02nlp2rvesx" path="res://scripts/Tinder.gd" id="1_vsjow"]
-[ext_resource type="Texture2D" uid="uid://00bjqlrh858w" path="res://Art assets/EmptyElement.png" id="2_84bpv"]
 [ext_resource type="FontFile" uid="uid://dmv7s462xwqui" path="res://fonts/Varela_Round/VarelaRound-Regular.ttf" id="3_kmbk7"]
+[ext_resource type="Texture2D" uid="uid://ce8er2w4pkcbp" path="res://Art assets/Characters/Argon.png" id="3_vsjow"]
 
 [node name="Tinder" type="Node2D"]
 script = ExtResource("1_vsjow")
@@ -13,8 +13,10 @@ position = Vector2(275, 511)
 texture = ExtResource("1_608o6")
 
 [node name="Element" type="Sprite2D" parent="."]
-position = Vector2(273, 141)
-texture = ExtResource("2_84bpv")
+z_index = -990
+position = Vector2(265.00003, 306.00003)
+scale = Vector2(1.2732204, 1.1899849)
+texture = ExtResource("3_vsjow")
 
 [node name="Title" type="Label" parent="."]
 offset_left = 76.0
