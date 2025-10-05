@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3nien2hrt7is"
-path="res://.godot/imported/Beryllium.png-d09657054f9463bc8312ac24997c5189.ctex"
+uid="uid://biwb8060hvw2f"
+path="res://.godot/imported/Sodium.png-f0bb77eef92f6781d95af5a9f101364c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art assets/Beryllium.png"
-dest_files=["res://.godot/imported/Beryllium.png-d09657054f9463bc8312ac24997c5189.ctex"]
+source_file="res://Art assets/Sodium.png"
+dest_files=["res://.godot/imported/Sodium.png-f0bb77eef92f6781d95af5a9f101364c.ctex"]
 
 [params]
 
