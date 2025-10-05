@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cojhs6w4m3jms"]
+
+[ext_resource type="Texture2D" uid="uid://ddm6rxl5xs5v" path="res://Art assets/opening cut scene.png" id="1_5v3x5"]
+
+[sub_resource type="Animation" id="Animation_5v3x5"]
+resource_name = "Comic"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g8tsm"]
+_data = {
+&"Comic": SubResource("Animation_5v3x5")
+}
+
+[node name="Comic" type="AnimationPlayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_g8tsm")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(641, 512)
+texture = ExtResource("1_5v3x5")
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 1024)
