@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://cojhs6w4m3jms"]
+
+[ext_resource type="Texture2D" uid="uid://ddm6rxl5xs5v" path="res://Art assets/opening cut scene.png" id="1_5v3x5"]
+[ext_resource type="Script" uid="uid://bp02djxecyc8y" path="res://scripts/comic.gd" id="1_g8tsm"]
+
+[sub_resource type="Animation" id="Animation_5v3x5"]
+resource_name = "Comic"
+length = 4.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Comic/Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.7, 0.9, 1.4, 1.6, 2.1, 2.3, 2.8, 3, 3.5, 3.7, 4.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 1280, 1024), Rect2(0, 0, 1280, 1024), Rect2(48, 28, 437, 409), Rect2(48, 28, 437, 409), Rect2(500, 31, 302, 400), Rect2(500, 31, 302, 400), Rect2(819, 24, 437, 411), Rect2(819, 24, 437, 411), Rect2(40, 495, 437, 412), Rect2(40, 495, 437, 412), Rect2(502, 497, 302, 400), Rect2(502, 497, 302, 400), Rect2(819, 488, 440, 410)]
+}
+
+[sub_resource type="Animation" id="Animation_g8tsm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Comic/Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 1280, 1024)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g8tsm"]
+_data = {
+&"Comic": SubResource("Animation_5v3x5"),
+&"RESET": SubResource("Animation_g8tsm")
+}
+
+[node name="Comic" type="AnimationPlayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_g8tsm")
+}
+script = ExtResource("1_g8tsm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(641, 512)
+texture = ExtResource("1_5v3x5")
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 1024)
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
